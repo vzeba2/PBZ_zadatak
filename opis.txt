@@ -1,0 +1,18 @@
+CREATE TABLE `zaposlenici_mobiteli` (
+  `id` int(11) NOT NULL,
+  `ime` varchar(100) NOT NULL,
+  `prezime` varchar(100) NOT NULL,
+  `naziv_mobitela` varchar(100) NOT NULL,
+  `tip_mobitela` varchar(50) NOT NULL,
+  `limit_mobitel` varchar(10) NOT NULL,
+  `datum_unosa` datetime NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+
+INSERT INTO `zaposlenici_mobiteli` (`id`, `ime`, `prezime`, `naziv_mobitela`, `tip_mobitela`, `limit_mobitel`, `datum_unosa`) VALUES
+(1, 'Ivica', 'Ivic', 'LG', 'V30', '500', '2018-03-04 00:21:29'),
+(2, 'Marija', 'Kranjec', 'Iphone', 's6', '300', '2018-03-06 12:37:05'),
+(3, 'Mario', 'Sukno', 'Samsung', 'S8', '123', '2018-03-06 12:49:38'),
+(5, 'Ivica', 'novak', 'Samsubg', 'G3', '200', '2018-03-06 14:08:21');
